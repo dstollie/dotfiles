@@ -24,6 +24,8 @@ brew 'bower'
 brew 'blackfire-agent'
 brew 'ansible'
 brew 'hub'
+brew 'fd'
+brew 'bat'
 
 cask 'transmission'
 cask 'hyper'
