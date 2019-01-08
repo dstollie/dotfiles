@@ -53,12 +53,7 @@ done
 
 unset config_files
 
-export PATH="$HOME/.yarn/bin:/Users/aron/Library/Python/2.7/bin:$PATH"
-
-if [ -d "$HOME/.nvm" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
-fi
+export PATH="$HOME/.yarn/bin:/Users/aron/Library/Python/2.7/bin:$(composer config -g home)/vendor/bin:$PATH"
 
 export LC_ALL=en_US.UTF-8 
 export LANG=en_US.UTF-8
