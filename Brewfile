@@ -42,6 +42,7 @@ cask 'sip'
 cask 'google-chrome'
 cask 'aerial'
 cask 'font-fira-code'
+cask 'sequel-pro'
 
 # Quick look plugins
 cask 'qlcolorcode'
