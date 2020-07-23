@@ -12,6 +12,9 @@ export DEFAULT_USER=`whoami`
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 
+# Resolve error: https://github.com/ohmyzsh/ohmyzsh/issues/6835
+ZSH_DISABLE_COMPFIX=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -70,9 +73,7 @@ export LANG=en_US.UTF-8
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
+export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.composer-valet/vendor/bin:$PATH"
-
-ssh-add < /dev/null
